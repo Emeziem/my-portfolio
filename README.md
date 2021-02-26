@@ -1,6 +1,6 @@
 # Google Software Product Sprint
 
-This repo contains repo contains Chiemeziem's portfolio and SPS projects.
+This repo contains Chiemeziem's portfolio and SPS projects.
 
 To get started:
 
