@@ -1,8 +1,7 @@
-/* body {
-    background-image: url("images/Chiemeziem.jpg");
-    background-repeat: no-repeat;
-    background-position: right center;
-} */
+body {
+    background-color: #212529;
+    color: #fff;
+}
 
 #content {
   /* margin-left: auto; */
@@ -21,16 +20,6 @@ img.my-pic {
   margin-top: 40px;
 }
 
-/* a:link {
-    text-decoration: none;
-    color: coral;
+.fa-android {
+    color: greenyellow;
 }
-
-a:visited {
-    color: coral;
-}
-
-a:hover {
-    color: coral;
-    text-decoration: none;
-} */
