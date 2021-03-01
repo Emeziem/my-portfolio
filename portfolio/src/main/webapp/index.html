@@ -1,19 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Chiemeziem Nwaiwu - Software Engineering Student</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     </div>
-  </body>
+    <div id="content" class="container-fluid bg-gradient-dark text">
+        <img src="/images/Chiemeziem.jpg" class="img-fluid float-right my-pic"/>
+        <p class="text-left font-weight-bold">Hi, I'm Chiemeziem Nwaiwu.</p>
+        <h1>Student at the University of Central Oklahoma.</h1>
+        <p>
+            I am a sophomore majoring in Computer Software Engineering. I am a Nigerian and before I
+            left my country, I developed and launched my first android application on the Google Play
+            Store named 
+            <a href="https://play.google.com/store/apps/details?id=com.emeziem.brainteaser&hl=en" class="linkers">
+                Brain Teaser
+            </a>.
+            Definitely check it out!
+        </p>
+        <h2>My Personal Development.</h2>
+        <p>
+            Here in the United States of America, I have worked on numerous individual school projects in C++
+            and Java programming language. Let me start with C++. In the Summer of 2020, I designed a Hangman
+            Game and a Baseball Guessing Game with a mini-score board. I earned a full credit for it at the end
+            of the semester. In the Fall of 2020, I designed an enhanced Hangman Game using Java GUI, and MVC
+            structures. I also learned how to design a Snake Game and Space Invader Game. As my final semster project,
+            I successfully designed an Enhanced Space Invader Game using Java GUI, MVC structures, Inheritance, and
+            Design Patterns and I earned an A+ in the class after the semster.
+        </p>
+        <p>Click <a href="https://emeziem.github.io/" class="linkers">here</a> to see my android application website.</p>
+        <p>Click here to get a random message:</p>
+        <button onclick="addRandomGreeting()">Hello</button>
+        <div id="greeting-container"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
