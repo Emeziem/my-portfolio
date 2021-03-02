@@ -13,16 +13,22 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Adds a random fun fact about me.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+function addFunFacts() {
+    const facts = [
+        'My favorite video games are FIFA, The Last Of Us and Batman Arkham Knight.',
+        'I have used 6 major operating systems. They are Microsoft Windows, Linux (Ubuntu), MacOS, iPadOS, Android, and iOS.',
+        'I developed my first android app at the age of 18 before entering the university.',
+        'I graduated from high school at the age of 16.',
+        'My favorite movies are the 23 Marvel Cinematic Universe films, Kingsman, and The Pirates of the Caribbean.',
+        'My best musician is Ed Sheeran.'
+    ]
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+    // Pick a random fact.
+    const fact = facts[Math.floor(Math.random() * facts.length)];
 
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+    // Add it to the page.
+    const factsContainer = document.getElementById('facts-container');
+    factsContainer.innerText = fact;
 }
