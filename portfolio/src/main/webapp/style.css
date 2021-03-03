@@ -1,25 +1,180 @@
 body {
-    background-color: #212529;
-    color: #fff;
+  background-color: #212529;
+  color: #fff;
+  font-family: "Comic Sans MS";
+  width: 90%;
+  margin: 0 auto;
 }
 
 #content {
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  /* width: 650px; */
-  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1300px;
+  padding: 125px 0px;
+  overflow: auto;
 }
 
-img.my-pic {
-    width: 700px;
-    height: 530px;
+#menu-bar {
+  position: fixed;
+  overflow: hidden;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 10;
 }
 
-#greeting-container {
-  /* margin-top: 20px; */
-  margin-top: 40px;
+#menu-bar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  transition-duration: 0.2s;
+  font-size: 25px;
 }
 
-.fa-android {
-    color: greenyellow;
+#menu-bar a:hover {
+	background: rgb(51, 51, 51);
+	color: white;
+}
+
+h1.attention {
+	font-size: 75px;
+}
+
+p {
+	font-size: 28px;
+}
+
+div.introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.intro {
+  padding-right: 150px;
+}
+
+a, a:visited {
+  color: #f0860c;
+}
+
+a:link {
+  color: #f0860c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gold;
+}
+
+#my-pic {
+  width: 390px;
+  height: 320px;
+  padding-top: 15px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+}
+
+.button {
+  background-color: skyblue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 16px 38px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: aqua;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 16px 38px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+}
+
+#facts-container {
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+i.fa-heart {
+  color: red;
+}
+
+i.fa-android {
+  color: greenyellow;
+}
+
+i.fa-java {
+  color: red;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+i.fa-star {
+  color: gold;
+}
+
+i.fa-github {
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+i.fa-linkedin {
+  color: #0e76a8;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#country {
+	width: 4%;
+	height: 0%;
+}
+
+.guide {
+	color: cadetblue;
+}
+
+.skills {
+  font-size: 20px;
+}
+
+dt {
+  font-weight: bolder;
+  font-size: 28px;
+}
+
+dd {
+  font-size: 18px;
+}
+
+#middle {
+  margin: 0 auto;
+}
+
+
+.communicate {
+    font-size: 25px;
+}
+
+/* Center the iframe */
+iframe {
+  display: block;
+  margin: 0 auto;
 }
