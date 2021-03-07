@@ -35,11 +35,31 @@ function addFunFacts() {
 
 
 /** Fetches the current date from the server and adds it to the page. */
-async function showServerTime() {
-  const responseFromServer = await fetch('/date');
-//   const responseFromServer = await fetch('Saturday 6th March, 2021');
-  const textFromResponse = await responseFromServer.text();
+// async function showServerTime() {
+//   const responseFromServer = await fetch('/date');
+//   const textFromResponse = await responseFromServer.text();
 
-  const dateContainer = document.getElementById('date-container');
-  dateContainer.innerText = textFromResponse;
+//   const dateContainer = document.getElementById('date-container');
+//   dateContainer.innerText = textFromResponse;
+// }
+
+/** Fetches stats from the server and adds them to the page. */
+async function getFacts() {
+  const responseFromServer = await fetch('/facts');
+  // The json() function returns an object that contains fields that we can
+  // reference to create HTML.
+  const stats = await responseFromServer.json();
+
+  // Pick a random fact.
+  const quotes = stats[Math.floor(Math.random() * stats.length)];
+
+  const statsListElement = document.getElementById('quote-container');
+  statsListElement.innerHTML = quotes;
+}
+
+/** Creates an <li> element containing text. */
+function createListElement(text) {
+  const liElement = document.createElement('li');
+  liElement.innerText = text;
+  return liElement;
 }
