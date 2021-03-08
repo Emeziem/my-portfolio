@@ -17,12 +17,12 @@
  */
 function addFunFacts() {
     const facts = [
-        'My favorite video games are FIFA, The Last Of Us and Batman Arkham Knight.',
-        'I have used 6 major operating systems. They are Microsoft Windows, Linux (Ubuntu), MacOS, iPadOS, Android, and iOS.',
-        'I developed my first android app at the age of 18 before entering the university.',
-        'I graduated from high school at the age of 16.',
-        'My favorite movies are the 23 Marvel Cinematic Universe films, Kingsman, and The Pirates of the Caribbean.',
-        'My best musician is Ed Sheeran.'
+        '🎮 My favorite video games are FIFA, The Last Of Us and Batman Arkham Knight.',
+        '💻 I have used 6 major operating systems. They are Microsoft Windows, Linux (Ubuntu), MacOS, iPadOS, Android, and iOS.',
+        '📱 I developed my first android app at the age of 18 before entering the university.',
+        '🏫 I graduated from high school at the age of 16.',
+        '🎬 My favorite movies are the 23 Marvel Cinematic Universe films, Kingsman, and The Pirates of the Caribbean.',
+        '🎧 My best musician is Ed Sheeran.'
     ]
 
     // Pick a random fact.
@@ -33,33 +33,16 @@ function addFunFacts() {
     factsContainer.innerText = fact;
 }
 
-
-/** Fetches the current date from the server and adds it to the page. */
-// async function showServerTime() {
-//   const responseFromServer = await fetch('/date');
-//   const textFromResponse = await responseFromServer.text();
-
-//   const dateContainer = document.getElementById('date-container');
-//   dateContainer.innerText = textFromResponse;
-// }
-
 /** Fetches stats from the server and adds them to the page. */
-async function getFacts() {
-  const responseFromServer = await fetch('/facts');
+async function getMovieQuotes() {
+  const responseFromServer = await fetch('/movie-quotes');
   // The json() function returns an object that contains fields that we can
   // reference to create HTML.
   const stats = await responseFromServer.json();
 
   // Pick a random fact.
-  const quotes = stats[Math.floor(Math.random() * stats.length)];
+  const favoriteMovieQuotes = stats[Math.floor(Math.random() * stats.length)];
 
   const statsListElement = document.getElementById('quote-container');
-  statsListElement.innerHTML = quotes;
-}
-
-/** Creates an <li> element containing text. */
-function createListElement(text) {
-  const liElement = document.createElement('li');
-  liElement.innerText = text;
-  return liElement;
+  statsListElement.innerText = favoriteMovieQuotes;
 }
