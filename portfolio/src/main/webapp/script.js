@@ -32,3 +32,14 @@ function addFunFacts() {
     const factsContainer = document.getElementById('facts-container');
     factsContainer.innerText = fact;
 }
+
+
+/** Fetches the current date from the server and adds it to the page. */
+async function showServerTime() {
+  const responseFromServer = await fetch('/date');
+//   const responseFromServer = await fetch('Saturday 6th March, 2021');
+  const textFromResponse = await responseFromServer.text();
+
+  const dateContainer = document.getElementById('date-container');
+  dateContainer.innerText = textFromResponse;
+}
