@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/** Handles requests sent to the /hello URL. Try running a server and navigating to /hello! */
+/** Handles requests sent to the /welcome URL. Try running a server and navigating to /welcome! */
 @WebServlet("/welcome")
 public class HelloWorld extends HttpServlet {
 
@@ -16,3 +16,4 @@ public class HelloWorld extends HttpServlet {
     response.getWriter().println("<h1>Welcome to Java Servlet!</h1>");
   }
 }
+
