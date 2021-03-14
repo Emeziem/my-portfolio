@@ -191,3 +191,16 @@ iframe {
   display: block;
   margin: 0 auto;
 }
+
+#location {
+    text-align: center;
+}
+
+i.fa-map-pin {
+    color: crimson;    
+}
+
+#describe {
+    color: black;
+    font-size: 17px;
+}
