@@ -156,3 +156,39 @@ function initMap() {
     infowindow.open(map, marker);
   });
 }
+
+// Google Chart Implementation
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+/** Creates a chart and adds it to the page. */
+function drawChart() {
+  const data = new google.visualization.DataTable();
+  data.addColumn('string', 'Activities');
+  data.addColumn('number', 'Count');
+        data.addRows([
+          ['Assignment/Projects', 45],
+          ['Coding', 35],
+          ['Reading', 15],
+          ['Interview Preparation', 28],
+          ['Watching Movies', 6],
+          ['Hanging Out/Others', 2],
+        ]);
+
+  const options = {
+    title: 'My Daily Activity',
+    titleTextStyle: { color: 'chartreuse', fontName: 'Comic Sans MS', fontSize: 18, bold: true, italic: true },
+    width: 700,
+    height: 470,
+    is3D: true,
+    backgroundColor: '#212529',
+    tooltip: {textStyle: {color: 'black'}, showColorCode: true},
+    legend: {
+        textStyle: { color: 'white' }
+    },
+  };
+
+  const chart = new google.visualization.PieChart(
+      document.getElementById('chart-container'));
+  chart.draw(data, options);
+}
