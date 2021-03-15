@@ -46,3 +46,11 @@ async function getMovieQuotes() {
   const statsListElement = document.getElementById('quote-container');
   statsListElement.innerText = favoriteMovieQuotes;
 }
+
+/** Creates a map and adds it to the page. */
+function initMap() {
+  let map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 35.658619393733034, lng: -97.47290002092537 },
+    zoom: 16,
+  });
+}
