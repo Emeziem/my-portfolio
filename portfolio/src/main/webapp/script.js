@@ -49,7 +49,7 @@ async function getMovieQuotes() {
 
 /** Creates a map and adds it to the page. */
 function initMap() {
-  const schoolLocation = { lat: 35.658619393733034, lng: -97.47290002092537 };
+  const schoolLocation = { lat: 35.657494863085404, lng: -97.47099028809195 };
   let map = new google.maps.Map(document.getElementById("map"), {
     center: schoolLocation,
     zoom: 16,
@@ -138,9 +138,21 @@ function initMap() {
       },
     ],    
   });
+
   // The marker, positioned at schoolLocation
   const marker = new google.maps.Marker({
     position: schoolLocation,
     map: map,
+    title: "The University of Central Oklahoma"
+  });
+
+  // Info window.
+  const infowindow = new google.maps.InfoWindow({
+      content: '<p id="describe">The University of Central Oklahoma is the Oklahoma\'s oldest institution of higher learning founded in 1890.</p>'
+  });
+
+  // Click event listener for the marker.
+  marker.addListener("click", () => {
+    infowindow.open(map, marker);
   });
 }
