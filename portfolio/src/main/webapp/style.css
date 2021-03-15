@@ -41,8 +41,17 @@ body {
 	color: white;
 }
 
+h1 {
+    color: chartreuse;
+}
+
 h1.attention {
-	font-size: 75px;
+    font-size: 75px;
+    color: chartreuse;
+}
+
+b#greet {
+    color: chartreuse;
 }
 
 p {
@@ -203,4 +212,35 @@ i.fa-map-pin {
 #describe {
     color: black;
     font-size: 17px;
+}
+
+footer {
+    color: white;
+    font-size: 80%;
+    padding: 7px, 0px, 0px, 20px;
+}
+
+footer.site-footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #000;
+}
+
+hr {
+  background-color: #fff;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.copyright {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #fff;
 }
