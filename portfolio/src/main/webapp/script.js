@@ -148,7 +148,7 @@ function initMap() {
 
   // Info window.
   const infowindow = new google.maps.InfoWindow({
-      content: '<p id="describe">The University of Central Oklahoma is the Oklahoma\'s oldest institution of higher learning founded in 1890.</p>'
+      content: '<p id="describe">The University of Central Oklahoma is Oklahoma\'s oldest institution of higher learning founded in 1890.</p>'
   });
 
   // Click event listener for the marker.
